@@ -171,7 +171,7 @@ scp username@server:/path/to/aibat-backup-*.tar.gz /local/backup/directory/
 ## Контакты
 
 **EcoForest Group**
-- Адрес: г.Астана, ул. Кордай 79
+- Адрес: г.Астана, ул.Кошкарбаева 56
 - Телефон: +7 (747) 157-41-51
 - Email: ecoforest_group@mail.ru
 - Сайт: [aibat.openyour.site](https://aibat.openyour.site)
