@@ -1,3 +1,5 @@
+# robots.txt для сайта EcoForest Group
+# Разрешить индексацию всем поисковым системам
 User-agent: *
 Allow: /
 Sitemap: https://aibat.openyour.site/sitemap.xml

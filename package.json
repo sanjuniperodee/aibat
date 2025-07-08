@@ -1,7 +1,7 @@
 {
-  "name": "aibat-website",
+  "name": "ecoforest-group-website",
   "version": "1.0.0",
-  "description": "Сайт компании Айбат",
+  "description": "Сайт компании EcoForest Group",
   "main": "index.html",
   "scripts": {
     "start": "live-server --port=3000 --open=/",
@@ -10,14 +10,15 @@
     "build:js": "node scripts/build-js.js",
     "dev": "npm run start",
     "lint": "eslint js/ --ext .js",
-    "lint:fix": "eslint js/ --ext .js --fix"
+    "lint:fix": "eslint js/ --ext .js --fix",
+    "postbuild": "mkdir -p dist && cp index.html dist/ && cp index_1.html dist/ 2>/dev/null || true && cp 404.html dist/ 2>/dev/null || true && cp 500.html dist/ 2>/dev/null || true && cp robots.txt dist/ 2>/dev/null || true && cp sitemap.xml dist/ 2>/dev/null || true && cp -r assets dist/ && cp -r css dist/ && cp -r js dist/ && cp -r images dist/ 2>/dev/null || true && cp -r services dist/ 2>/dev/null || true && cp -r projects dist/ 2>/dev/null || true"
   },
   "keywords": [
     "website",
     "company",
     "aibat"
   ],
-  "author": "Aibat Company",
+  "author": "EcoForest Group",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2",

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276 320" width="140" height="160">
+  <!-- Дерево из печати, цвет заменён на #27a337 -->
+  <g fill="none" stroke="#27a337" stroke-width="2">
+    <path d="M 149.00 34.00 C 147.64 34.64 147.72 34.91 146.00 34.00 ..."/>
+    <!-- ... (сюда вставить все path дерева из вашего SVG, заменив stroke на #27a337) ... -->
+  </g>
+  <text x="138" y="305" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#27a337" font-weight="bold">EcoForest Group</text>
+</svg> 
