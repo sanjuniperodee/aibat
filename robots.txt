@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Sitemap: https://aibat.openyour.site/sitemap.xml
+
+# Disallow certain files and directories
+Disallow: /cgi-bin/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Allow CSS, JavaScript, and images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.webp$ 

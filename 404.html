@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Страница не найдена | Компания Айбат</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .error-page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .error-code {
+      font-size: 120px;
+      font-weight: 700;
+      color: #27a337;
+      margin: 0;
+      line-height: 1;
+    }
+    
+    .error-title {
+      font-size: 32px;
+      margin: 20px 0;
+      color: #2c5530;
+    }
+    
+    .error-message {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+      color: #555;
+    }
+    
+    .error-buttons {
+      display: flex;
+      gap: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 80px;
+      }
+      
+      .error-title {
+        font-size: 24px;
+      }
+      
+      .error-message {
+        font-size: 16px;
+      }
+      
+      .error-buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Страница не найдена</h2>
+    <p class="error-message">Извините, запрашиваемая вами страница не существует или была перемещена. Пожалуйста, проверьте URL или вернитесь на главную страницу.</p>
+    <div class="error-buttons">
+      <a href="/" class="btn btn-primary">Вернуться на главную</a>
+      <a href="/#contact" class="btn btn-outline">Связаться с нами</a>
+    </div>
+  </div>
+</body>
+</html> 

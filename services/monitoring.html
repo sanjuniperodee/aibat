@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мониторинг атмосферного воздуха - Компания Айбат</title>
+  <meta name="description" content="Профессиональный мониторинг и анализ атмосферного воздуха и выбросов промышленных предприятий от компании Айбат. Современное оборудование и методики.">
+  <meta name="keywords" content="мониторинг воздуха, анализ атмосферного воздуха, экология, выбросы предприятий, Айбат, Казахстан, Астана">
+  <meta name="author" content="Компания Айбат">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="../assets/5d6e1dd714f61b00240b1674_optimized">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Дополнительные стили для страницы услуги */
+    .service-hero {
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+      padding: 180px 0 80px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .service-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.1;
+    }
+    
+    .service-hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    
+    .service-hero-title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+    
+    .service-hero-subtitle {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+    
+    .service-content {
+      padding: 80px 0;
+    }
+    
+    .service-section {
+      margin-bottom: 60px;
+    }
+    
+    .service-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--secondary-color);
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .service-section h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+    
+    .service-image {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin: 30px 0;
+    }
+    
+    .service-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .service-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    
+    .feature-item {
+      background-color: white;
+      padding: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .feature-item:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-hover);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background-color: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .feature-icon i {
+      font-size: 24px;
+      color: white;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    
+    .service-cta {
+      background-color: var(--bg-light);
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .service-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    .service-cta p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    
+    @media (max-width: 768px) {
+      .service-hero {
+        padding: 150px 0 60px;
+      }
+      
+      .service-hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .service-section h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="../index.html">
+            <img src="../assets/5d6e1dd714f61b00240b1674_optimized" alt="Айбат" class="logo">
+            <span class="brand-text">Айбат</span>
+          </a>
+        </div>
+        
+        <div class="navbar-menu" id="navbarMenu">
+          <a href="../index.html" class="nav-link">Главная</a>
+          <a href="../index.html#about" class="nav-link">О нас</a>
+          <a href="../index.html#services" class="nav-link">Услуги</a>
+          <a href="../index.html#projects" class="nav-link">Проекты</a>
+          <a href="../index.html#nursery" class="nav-link">Питомник</a>
+          <a href="../index.html#documents" class="nav-link">Документы</a>
+          <a href="../index.html#contact" class="nav-link">Контакты</a>
+        </div>
+        
+        <div class="navbar-contact">
+          <a href="tel:+77471574151" class="phone-link">
+            <i class="fas fa-phone"></i>
+            +7 (747) 157-41-51
+          </a>
+        </div>
+        
+        <div class="navbar-toggle" id="navbarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Hero Section -->
+  <section class="service-hero">
+    <div class="container">
+      <div class="service-hero-content">
+        <h1 class="service-hero-title">Мониторинг атмосферного воздуха</h1>
+        <p class="service-hero-subtitle">Профессиональный мониторинг и анализ атмосферного воздуха и выбросов промышленных предприятий</p>
+        <a href="../index.html#contact" class="btn btn-primary">Получить консультацию</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Content -->
+  <section class="service-content">
+    <div class="container">
+      <div class="service-section">
+        <h2>О услуге</h2>
+        <p>Мониторинг атмосферного воздуха - это комплекс мероприятий, направленных на контроль качества воздуха и выявление источников загрязнения. Компания Айбат предоставляет профессиональные услуги по мониторингу атмосферного воздуха с использованием современного оборудования и методик.</p>
+        <p>Наши специалисты проводят регулярные измерения концентраций загрязняющих веществ в атмосферном воздухе, анализируют полученные данные и разрабатывают рекомендации по снижению негативного воздействия на окружающую среду.</p>
+        
+        <div class="service-image">
+          <img src="../assets/66d97943738a140178af3691_optimized" alt="Мониторинг атмосферного воздуха">
+        </div>
+      </div>
+      
+      <div class="service-section">
+        <h2>Наши преимущества</h2>
+        <div class="service-features">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <h3>Современное оборудование</h3>
+            <p>Использование высокоточного оборудования для измерения концентраций загрязняющих веществ в воздухе.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Квалифицированные специалисты</h3>
+            <p>Наши специалисты имеют большой опыт работы в области экологического мониторинга.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3>Официальные заключения</h3>
+            <p>Предоставление официальных заключений о качестве атмосферного воздуха.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Анализ данных</h3>
+            <p>Детальный анализ полученных данных и разработка рекомендаций по улучшению экологической ситуации.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3>Регулярный мониторинг</h3>
+            <p>Возможность организации регулярного мониторинга атмосферного воздуха на вашем объекте.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <h3>Контроль выбросов</h3>
+            <p>Контроль выбросов промышленных предприятий и разработка мероприятий по их снижению.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-section">
+        <h2>Этапы работы</h2>
+        <ol>
+          <li><strong>Консультация и определение задач</strong> - обсуждение целей мониторинга, определение контролируемых параметров.</li>
+          <li><strong>Разработка программы мониторинга</strong> - определение точек отбора проб, периодичности измерений, методик анализа.</li>
+          <li><strong>Отбор проб воздуха</strong> - проведение измерений концентраций загрязняющих веществ в атмосферном воздухе.</li>
+          <li><strong>Лабораторный анализ</strong> - анализ отобранных проб в аккредитованной лаборатории.</li>
+          <li><strong>Обработка результатов</strong> - статистическая обработка полученных данных, сравнение с нормативами.</li>
+          <li><strong>Подготовка отчета</strong> - составление отчета о результатах мониторинга с выводами и рекомендациями.</li>
+          <li><strong>Разработка мероприятий</strong> - разработка мероприятий по снижению негативного воздействия на атмосферный воздух.</li>
+        </ol>
+      </div>
+      
+      <div class="service-section">
+        <h2>Контролируемые параметры</h2>
+        <ul>
+          <li>Оксиды азота (NOx)</li>
+          <li>Диоксид серы (SO2)</li>
+          <li>Оксид углерода (CO)</li>
+          <li>Взвешенные частицы (PM10, PM2.5)</li>
+          <li>Углеводороды</li>
+          <li>Тяжелые металлы</li>
+          <li>Озон (O3)</li>
+          <li>Формальдегид</li>
+          <li>Бензол, толуол, ксилол</li>
+          <li>Аммиак</li>
+          <li>Сероводород</li>
+          <li>Другие специфические загрязнители</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service CTA -->
+  <section class="service-cta">
+    <div class="container">
+      <h2>Заинтересованы в наших услугах?</h2>
+      <p>Свяжитесь с нами для получения подробной информации о услуге мониторинга атмосферного воздуха и расчета стоимости работ для вашего объекта.</p>
+      <a href="../index.html#contact" class="btn btn-primary">Связаться с нами</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>О компании</h4>
+          <p>Компания Айбат предоставляет профессиональные услуги в области экологии, озеленения и природоохранных проектов.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../index.html#about">О нас</a></li>
+            <li><a href="../index.html#services">Услуги</a></li>
+            <li><a href="../index.html#projects">Проекты</a></li>
+            <li><a href="../index.html#nursery">Питомник</a></li>
+            <li><a href="../index.html#documents">Документы</a></li>
+            <li><a href="../index.html#contact">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> <a href="tel:+77471574151">+7 (747) 157-41-51</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:aibat_company@mail.ru">aibat_company@mail.ru</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> г.Астана, ул. Кордай 79</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Компания Айбат. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Document Ready
+    document.addEventListener('DOMContentLoaded', function() {
+      // Header Scroll Effect
+      const header = document.querySelector('.header');
+      const scrollThreshold = 50;
+      
+      function handleScroll() {
+        if (window.scrollY > scrollThreshold) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+      
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Initial check
+      
+      // Mobile Menu Toggle
+      const navbarToggle = document.getElementById('navbarToggle');
+      const navbarMenu = document.getElementById('navbarMenu');
+      
+      if (navbarToggle) {
+        navbarToggle.addEventListener('click', function() {
+          navbarToggle.classList.toggle('active');
+          navbarMenu.classList.toggle('active');
+        });
+      }
+      
+      // Close mobile menu when clicking on a nav link
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navbarToggle.classList.remove('active');
+          navbarMenu.classList.remove('active');
+        });
+      });
+      
+      // Smooth Scrolling for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+      
+      // Back to Top Button
+      const backToTopButton = document.querySelector('.back-to-top');
+      
+      if (backToTopButton) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+          } else {
+            backToTopButton.classList.remove('show');
+          }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html> 
