@@ -277,6 +277,31 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Fix any unexpected images
     cleanupUnexpectedImages();
+
+    // Gallery Lightbox for service and project pages
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            if (img) {
+                openLightbox(img.src, img.alt);
+            }
+        });
+    });
+
+    // Add mobile menu functionality for sub-pages
+    const currentPath = window.location.pathname;
+    if (currentPath.includes('/services/') || currentPath.includes('/projects/')) {
+        // Update active nav link based on current page
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (currentPath.includes('/services/') && link.getAttribute('href').includes('#services')) {
+                link.classList.add('active');
+            } else if (currentPath.includes('/projects/') && link.getAttribute('href').includes('#projects')) {
+                link.classList.add('active');
+            }
+        });
+    }
 });
 
 // Lightbox functionality
